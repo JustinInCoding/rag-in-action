@@ -6,7 +6,7 @@ import pdf2image
 import pytesseract
 
 # 将 PDF 转换为图片并保存
-images = pdf2image.convert_from_path('90-文档-Data/黑悟空/黑神话悟空.pdf')
+images = pdf2image.convert_from_path('../../90-文档-Data/黑悟空/黑神话悟空.pdf')
 for i, image in enumerate(images):
     image.save(f'output/page_{i+1}.png')
 
