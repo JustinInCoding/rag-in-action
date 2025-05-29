@@ -27,7 +27,8 @@ reader = DatabaseReader(
     port=3306,
     user="newuser",
     password="password",
-    dbname="example_db"
+    dbname="example_db",
+    auth_plugin="caching_sha2_password"  # Using the new default authentication plugin
 )
 
 query = "SELECT * FROM game_scenes" # 选择所有游戏场景 -> Text-to-SQL
